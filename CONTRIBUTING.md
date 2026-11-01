@@ -50,7 +50,7 @@ When submitting code contributions, please use our [pull request template](.gith
 
 1.  **Fork the Repository**
     ```bash
-    git clone https://github.com/alam00000/bentopdf.git
+    git clone https://github.com/bentopdf/bentopdf.git
     cd bento-pdf
     npm install
     ```

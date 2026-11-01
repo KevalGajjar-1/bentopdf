@@ -59,7 +59,11 @@ input[type="file"]::file-selector-button {
     border: 2px dashed #4f46e5;
 }
 
-#embed-pdf-container>div {
+#embed-pdf-container>div,
+#studio-embed-container,
+#studio-embed-container>div,
+#studio-embed-container embed-pdf,
+#studio-embed-container iframe {
     width: 100%;
     height: 100%;
 }

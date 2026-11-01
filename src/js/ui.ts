@@ -679,11 +679,14 @@ compress: () => `
     `,
     edit: () => `
         <h2 class="text-2xl font-bold text-white mb-4">PDF Studio</h2>
-        <p class="mb-6 text-gray-400">An all-in-one PDF workspace where you can annotate, draw, highlight, redact, add comments and shapes, take screenshots, and view PDFs.</p>
+        <p class="mb-6 text-gray-400">An all-in-one PDF workspace where you can annotate, draw, highlight, redact, add comments and shapes, take screenshots, and view PDFs in an immersive full-page experience.</p>
         ${createFileInputHTML()}
         <div id="file-display-area" class="mt-4 space-y-2"></div>
-        <div id="embed-pdf-wrapper" class="hidden mt-6 w-full h-[75vh] border border-gray-600 rounded-lg">
-            <div id="embed-pdf-container" class="w-full h-full"></div>
+        <div class="mt-6 flex justify-center">
+            <button id="launch-studio-btn" type="button" class="btn-gradient px-6 py-2.5 rounded-xl text-white font-semibold text-sm flex items-center gap-2 shadow-lg cursor-pointer">
+                <i data-lucide="maximize-2" class="w-4 h-4"></i>
+                <span>Open Full Page Studio</span>
+            </button>
         </div>
     `,
     'delete-pages': () => `

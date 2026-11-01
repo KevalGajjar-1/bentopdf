@@ -8,6 +8,7 @@ import { PDFDocument as PDFLibDocument } from 'pdf-lib';
 import { icons, createIcons } from 'lucide';
 import Sortable from 'sortablejs';
 import { multiFileTools, simpleTools, singlePdfLoadTools } from '../config/pdf-tools.js';
+import { openPdfStudio } from '../logic/pdf-studio.js';
 import * as pdfjsLib from 'pdfjs-dist';
 
 async function handleSinglePdfUpload(toolId, file) {
@@ -337,39 +338,7 @@ export function setupFileInputHandler(toolId) {
         } else if (toolId === 'edit') {
             const file = state.files[0];
             if (!file) return;
-
-            const pdfWrapper = document.getElementById('embed-pdf-wrapper');
-            const pdfContainer = document.getElementById('embed-pdf-container');
-
-            pdfContainer.textContent = ''; // Clear safely
-
-            if (state.currentPdfUrl) {
-                URL.revokeObjectURL(state.currentPdfUrl);
-            }
-            pdfWrapper.classList.remove('hidden');
-            const fileURL = URL.createObjectURL(file);
-            state.currentPdfUrl = fileURL;
-
-            const script = document.createElement('script');
-            script.type = 'module';
-            script.textContent = `
-                import EmbedPDF from 'https://snippet.embedpdf.com/embedpdf.js';
-                EmbedPDF.init({
-                    type: 'container',
-                    target: document.getElementById('embed-pdf-container'),
-                    src: '${fileURL}',
-                    theme: 'dark',
-                });
-            `;
-            document.head.appendChild(script);
-
-            const backBtn = document.getElementById('back-to-grid');
-            const urlRevoker = () => {
-                URL.revokeObjectURL(fileURL);
-                state.currentPdfUrl = null;
-                backBtn.removeEventListener('click', urlRevoker);
-            };
-            backBtn.addEventListener('click', urlRevoker);
+            openPdfStudio(file);
         }
     };
 

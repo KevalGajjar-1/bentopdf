@@ -2,11 +2,17 @@ import { state } from '../state.js';
 import { dom, switchView, toolTemplates } from '../ui.js';
 import { setupFileInputHandler } from './fileHandler.js';
 import { toolLogic } from '../logic/index.js';
+import { openPdfStudio } from '../logic/pdf-studio.js';
 import { createIcons, icons } from 'lucide';
 
 const SETUP_AFTER_UPLOAD = ['sign-pdf'];
 
 export function setupToolInterface(toolId: any) {
+    if (toolId === 'edit') {
+        openPdfStudio();
+        return;
+    }
+
     window.scrollTo({
         top: 0,
         left: 0,

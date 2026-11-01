@@ -7,16 +7,15 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/alam00000/bentopdf</Support>
+  <Support>https://www.bentopdf.com/</Support>
   <Project>https://www.bentopdf.com/</Project>
-  <Overview>Uploaded on behalf of creator: alam00000&#13;
-BentoPDF is a privacy first PDF Toolkit&#13;
+  <Overview>BentoPDF is a privacy first PDF Toolkit&#13;
 &#13;
 https://hub.docker.com/r/bentopdf/bentopdf/</Overview>
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/alam00000/bentopdf/refs/heads/main/public/images/favicon.svg</Icon>
+  <Icon>https://raw.githubusercontent.com/bentopdf/bentopdf/refs/heads/main/public/images/favicon.svg</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

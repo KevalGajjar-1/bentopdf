@@ -1,6 +1,7 @@
 import { categories } from './config/tools.js';
 import { dom, switchView, hideAlert } from './ui.js';
 import { setupToolInterface } from './handlers/toolSelectionHandler.js';
+import { initPdfStudioEvents } from './logic/pdf-studio.js';
 import { createIcons, icons } from 'lucide';
 import * as pdfjsLib from 'pdfjs-dist';
 import "../css/styles.css";
@@ -110,8 +111,9 @@ const init = () => {
         });
     }
 
+    initPdfStudioEvents();
     createIcons({ icons });
-    console.log('Please share our tool and share the love!');
+
 };
 
 document.addEventListener('DOMContentLoaded', init);

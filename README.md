@@ -1,7 +1,6 @@
 # BentoPDF
 
 ![Docker Pulls](https://img.shields.io/docker/pulls/bentopdf/bentopdf)
-[![Ko-fi](https://img.shields.io/badge/Buy%20me%20a%20Coffee-yellow?logo=kofi&style=flat-square)](https://ko-fi.com/alio0)
 
 **BentoPDF** is a powerful, privacy-first, client-side PDF toolkit that allows you to manipulate, edit, merge, and process PDF files directly in your browser. No server-side processing is required, ensuring your files remain secure and private.
 
@@ -100,7 +99,7 @@ This is the fastest way to try BentoPDF without setting up a development environ
 
 1.  **Clone the Repository**:
     ```bash
-    git clone https://github.com/alam00000/bentopdf.git
+    git clone https://github.com/bentopdf/bentopdf.git
     cd bentopdf
     ```
 
@@ -119,7 +118,7 @@ This is the fastest way to try BentoPDF without setting up a development environ
 
 1.  **Clone the Repository**:
     ```bash
-    git clone https://github.com/alam00000/bentopdf.git
+    git clone https://github.com/bentopdf/bentopdf.git
     cd bentopdf
     ```
 
@@ -162,7 +161,7 @@ BentoPDF was originally built using **HTML**, **CSS**, and **vanilla JavaScript*
 -   **Edit PDF Content**: Directly edit text and other content within your PDF.
 -   **Linearize PDF**: Optimize PDFs for fast web viewing.
 
-Contributions and discussions on the roadmap are welcome! Join the conversation via [Discord](https://discord.gg/q42xWQmJ).
+Contributions and discussions on the roadmap are welcome!
 
 ---
 
@@ -175,7 +174,7 @@ We welcome contributions from the community! Here’s how you can get started:
 3.  Make your changes and commit them with a clear message.
 4.  **Open a Pull Request** and describe the changes you've made.
 
-Have an idea for a new tool or an improvement? [Open an issue](https://github.com/alam00000/bentopdf/issues) to discuss it first.
+Have an idea for a new tool or an improvement? [Open an issue](#) to discuss it first.
 
 ---
 
@@ -195,4 +194,4 @@ Your work inspires and empowers developers everywhere. Thank you for making open
 
 ## 📜 License
 
-This project is licensed under the **Apache 2.0**. See the [LICENSE](https://github.com/alam00000/bentopdf/blob/main/LICENSE) file for details.
+This project is licensed under the **Apache 2.0**. See the [LICENSE](LICENSE) file for details.
